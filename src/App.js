@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Projects from './components/Projects';
 
 function App() {
   const [categories] = useState([
     {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
+      name: 'nasa',
+      description: 'View and save your favorite out-of-this-world NASA photos',
     },
     { name: 'portraits', description: 'Portraits of people in my life' },
     { name: 'food', description: 'Delicious delicacies' },
@@ -31,8 +31,8 @@ function App() {
       <main>
         {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
             <About></About>
+            <Projects></Projects>
           </>
         ) : (
           <ContactForm></ContactForm>

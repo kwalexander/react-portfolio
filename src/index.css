@@ -233,6 +233,7 @@ textarea {
 .card {
   width: 25%;
   text-align: center;
+  margin: 10px;
 }
 
 .img-thumbnail {
